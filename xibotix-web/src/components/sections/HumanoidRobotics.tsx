@@ -14,7 +14,8 @@ export function HumanoidRobotics() {
   ];
 
   return (
-    <section id="robotics" className="py-16 md:py-32 bg-transparent border-t border-black/5 relative">
+    <section id="robotics" className="py-16 md:py-32 relative border-t border-black/5">
+      <div className="absolute inset-0 bg-transparent z-[-2]" />
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           

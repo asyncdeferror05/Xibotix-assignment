@@ -13,7 +13,8 @@ export function TechnologyInnovation() {
   ];
 
   return (
-    <section id="technology" className="py-16 md:py-32 bg-transparent border-t border-black/5 relative">
+    <section id="technology" className="py-24 md:py-32 relative text-foreground">
+      <div className="absolute inset-0 bg-background z-[-2]" />
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center max-w-3xl mx-auto mb-20">

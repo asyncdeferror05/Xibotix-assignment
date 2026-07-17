@@ -5,7 +5,8 @@ import { ArrowRight, Activity } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] bg-transparent flex flex-col justify-center overflow-hidden pt-32 md:pt-0">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-24 pb-12 px-6 overflow-hidden">
+      <div className="absolute inset-0 bg-background z-[-2]" />
       <ParticleOverlay />
 
       {/* Hero Content */}
@@ -29,8 +30,9 @@ export function Hero() {
             Explore Robotics
             <ArrowRight size={18} />
           </a>
-          <a href="#rehab" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 glass-panel text-foreground font-medium rounded-full flex items-center justify-center gap-2 hover:bg-black/5 transition-all border border-black/10 text-sm md:text-base">
+          <a href="#rehab" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-foreground text-background font-medium rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-md text-sm md:text-base">
             Explore Rehabilitation
+            <ArrowRight size={18} />
           </a>
         </div>
       </div>

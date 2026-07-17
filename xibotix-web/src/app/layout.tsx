@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: "HopeLift is at the intersection of deep-tech humanoid robotics and next-generation rehabilitation devices.",
 };
 
+import { Navbar } from "@/components/shared/Navbar";
+import { Footer } from "@/components/shared/Footer";
+import { AmbientBackground } from "@/components/ui/AmbientBackground";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,7 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
+        <AmbientBackground />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
