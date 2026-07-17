@@ -18,9 +18,9 @@ export default function RoboticsPage() {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-xs font-medium text-white/80 mb-8"
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border border-white/10 text-xs font-medium text-black mb-8"
           >
-            <Brain size={14} className="text-emerald-400" />
+            <Cpu size={14} className="text-accent" />
             <span className="tracking-widest uppercase text-[10px]">HopeLift Robotics Platform</span>
           </motion.div>
 

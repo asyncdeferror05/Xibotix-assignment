@@ -15,9 +15,9 @@ export default function RehabilitationPage() {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel text-xs font-medium text-emerald-700 mb-8 border border-emerald-200/50"
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel text-xs font-medium text-black mb-8 border border-emerald-200/50"
           >
-            <Activity size={14} />
+            <Activity size={14} className="text-emerald-600" />
             <span className="tracking-widest uppercase text-[10px]">Clinical Solutions</span>
           </motion.div>
 

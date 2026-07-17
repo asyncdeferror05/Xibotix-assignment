@@ -10,8 +10,8 @@ export function Hero() {
 
       {/* Hero Content */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-6 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-xs font-medium text-foreground/80 mb-8 md:mb-12 border border-white/10 shadow-sm mx-auto">
-          <Activity size={14} className="text-emerald" />
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-xs font-medium text-black mb-8 md:mb-12 border border-white/10 shadow-sm mx-auto">
+          <Activity size={14} className="text-emerald-600" />
           <span className="tracking-widest uppercase text-[10px]">System Online</span>
         </div>
 
