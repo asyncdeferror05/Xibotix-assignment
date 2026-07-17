@@ -6,7 +6,6 @@ import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 export default function ContactPage() {
   return (
     <main className="min-h-screen relative pt-24">
-      <div className="absolute inset-0 bg-background z-[-2]" />
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           
@@ -29,26 +28,24 @@ export default function ContactPage() {
             </motion.p>
 
             <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-black/[0.03] rounded-full">
-                  <Mail className="w-6 h-6 text-foreground/80" />
+              <div className="flex gap-4 p-8 border border-white/10 rounded-3xl bg-white/5 hover:bg-white/10 transition-colors">
+                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                  <Mail className="text-foreground" size={20} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold uppercase tracking-widest text-foreground/50 mb-1">Inquiries</h4>
-                  <p className="text-lg font-medium">contact@hopelift.ai</p>
+                  <h4 className="font-medium text-foreground mb-1">Email</h4>
+                  <a href="mailto:contact@hopelift.ai" className="text-foreground/70 hover:text-foreground">contact@hopelift.ai</a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-black/[0.03] rounded-full">
-                  <MapPin className="w-6 h-6 text-foreground/80" />
+              {/* Support */}
+              <div className="flex gap-4 p-8 border border-white/10 rounded-3xl bg-white/5 hover:bg-white/10 transition-colors">
+                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                  <Phone className="text-foreground" size={20} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold uppercase tracking-widest text-foreground/50 mb-1">Headquarters</h4>
-                  <p className="text-lg font-medium text-balance">
-                    VIT Vellore<br />
-                    Vellore, Tamil Nadu 632014
-                  </p>
+                  <h4 className="font-medium text-foreground mb-1">Support</h4>
+                  <a href="tel:+18005550199" className="text-foreground/70 hover:text-foreground">+1 (800) 555-0199</a>
                 </div>
               </div>
             </div>
@@ -59,39 +56,39 @@ export default function ContactPage() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="p-8 md:p-12 bg-white border border-black/10 shadow-xl rounded-3xl"
+            className="p-8 md:p-12 bg-white/5 border border-white/10 shadow-xl rounded-3xl"
           >
-            <h3 className="text-2xl font-bold mb-8">Send a Message</h3>
+            <h3 className="text-2xl font-bold mb-8 text-foreground">Send a Message</h3>
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground/80">First Name</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-black/10 bg-[#fafafa] focus:bg-white focus:ring-2 focus:ring-black/5 outline-none transition-all" placeholder="Jane" />
+                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 focus:bg-white/10 focus:ring-2 focus:ring-white/10 outline-none transition-all text-foreground" placeholder="Jane" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground/80">Last Name</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-black/10 bg-[#fafafa] focus:bg-white focus:ring-2 focus:ring-black/5 outline-none transition-all" placeholder="Doe" />
+                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 focus:bg-white/10 focus:ring-2 focus:ring-white/10 outline-none transition-all text-foreground" placeholder="Doe" />
                 </div>
               </div>
 
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground/80">Work Email</label>
-                <input type="email" className="w-full px-4 py-3 rounded-xl border border-black/10 bg-[#fafafa] focus:bg-white focus:ring-2 focus:ring-black/5 outline-none transition-all" placeholder="jane@company.com" />
+                <input type="email" className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 focus:bg-white/10 focus:ring-2 focus:ring-white/10 outline-none transition-all text-foreground" placeholder="jane@company.com" />
               </div>
 
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground/80">Interest</label>
-                <select className="w-full px-4 py-3 rounded-xl border border-black/10 bg-[#fafafa] focus:bg-white focus:ring-2 focus:ring-black/5 outline-none transition-all appearance-none">
-                  <option>Humanoid Robotics</option>
-                  <option>Rehabilitation Systems</option>
-                  <option>Research Partnership</option>
-                  <option>Media Inquiry</option>
+                <select className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 focus:bg-white/10 focus:ring-2 focus:ring-white/10 outline-none transition-all appearance-none text-foreground">
+                  <option className="bg-black text-foreground">Humanoid Robotics</option>
+                  <option className="bg-black text-foreground">Rehabilitation Systems</option>
+                  <option className="bg-black text-foreground">Research Partnership</option>
+                  <option className="bg-black text-foreground">Media Inquiry</option>
                 </select>
               </div>
 
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground/80">Message</label>
-                <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-black/10 bg-[#fafafa] focus:bg-white focus:ring-2 focus:ring-black/5 outline-none transition-all resize-none" placeholder="How can we help you?" />
+                <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 focus:bg-white/10 focus:ring-2 focus:ring-white/10 outline-none transition-all resize-none text-foreground" placeholder="How can we help you?" />
               </div>
 
               <button className="w-full py-4 bg-foreground text-background font-medium rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">

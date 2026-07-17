@@ -6,12 +6,11 @@ import { ArrowRight, Activity } from "lucide-react";
 export function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-24 pb-12 px-6 overflow-hidden">
-      <div className="absolute inset-0 bg-background z-[-2]" />
       <ParticleOverlay />
 
       {/* Hero Content */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-6 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-xs font-medium text-foreground/80 mb-8 md:mb-12 border border-black/10 shadow-sm mx-auto">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-xs font-medium text-foreground/80 mb-8 md:mb-12 border border-white/10 shadow-sm mx-auto">
           <Activity size={14} className="text-emerald" />
           <span className="tracking-widest uppercase text-[10px]">System Online</span>
         </div>

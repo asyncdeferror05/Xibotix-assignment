@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#ffffff",
-        foreground: "#0a0a0a",
-        primary: "#f3f4f6",
-        secondary: "#e5e7eb",
-        accent: "#0a0a0a", // using black as accent for minimalism
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: "#1a1a1a",
+        secondary: "#2a2a2a",
+        accent: "#ffffff", // using white as accent for minimalism
         emerald: "#10b981",
         cyan: "#0ea5e9",
-        muted: "#6b7280",
-        surface: "#fafafa",
-        surfaceBorder: "#e5e7eb",
+        muted: "#a1a1aa", // lighter gray for dark mode
+        surface: "#111111", // very dark gray for surfaces
+        surfaceBorder: "#2a2a2a",
       },
       fontFamily: {
         sans: ["var(--font-inter)"],

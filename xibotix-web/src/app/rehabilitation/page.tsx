@@ -42,8 +42,7 @@ export default function RehabilitationPage() {
       </section>
 
       {/* Overview */}
-      <section className="py-24 relative border-y border-black/5">
-        <div className="absolute inset-0 bg-[#fafafa] z-[-2]" />
+      <section className="py-24 relative border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-2xl md:text-4xl font-medium tracking-tight leading-relaxed text-foreground/90 max-w-4xl mx-auto text-balance">
             HopeLift develops intelligent rehabilitation devices that combine robotics, biomechanics and AI to support patient recovery.
@@ -54,7 +53,6 @@ export default function RehabilitationPage() {
 
       {/* Core Technologies & Clinical Features */}
       <section className="py-24 md:py-32 relative">
-        <div className="absolute inset-0 bg-background z-[-2]" />
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20">
           
           <div>
@@ -68,8 +66,8 @@ export default function RehabilitationPage() {
                   Exoskeleton Systems
                 </h4>
                 <div className="flex gap-4">
-                  <div className="px-4 py-2 rounded-full border border-black/10 bg-black/[0.02] text-sm font-medium">Upper Limb Assistance</div>
-                  <div className="px-4 py-2 rounded-full border border-black/10 bg-black/[0.02] text-sm font-medium">Lower Limb Assistance</div>
+                  <div className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm font-medium">Upper Limb Assistance</div>
+                  <div className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm font-medium">Lower Limb Assistance</div>
                 </div>
               </div>
 
@@ -79,8 +77,8 @@ export default function RehabilitationPage() {
                   Motion Tracking
                 </h4>
                 <div className="flex gap-4">
-                  <div className="px-4 py-2 rounded-full border border-black/10 bg-black/[0.02] text-sm font-medium">Wearable Sensors</div>
-                  <div className="px-4 py-2 rounded-full border border-black/10 bg-black/[0.02] text-sm font-medium">Adaptive Therapy</div>
+                  <div className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm font-medium">Wearable Sensors</div>
+                  <div className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm font-medium">Adaptive Therapy</div>
                 </div>
               </div>
             </div>
@@ -99,7 +97,7 @@ export default function RehabilitationPage() {
                 { label: "Therapy personalization", icon: <Users size={18} /> },
                 { label: "Safety monitoring", icon: <Shield size={18} /> },
               ].map((feat, i) => (
-                <li key={i} className="flex items-center gap-3 p-4 rounded-xl border border-black/5 bg-white shadow-sm hover:shadow-md transition-all">
+                <li key={i} className="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-white/5 shadow-sm hover:bg-white/10 transition-all">
                   <div className="text-emerald-500">{feat.icon}</div>
                   <span className="font-medium text-sm text-foreground/80">{feat.label}</span>
                 </li>
@@ -112,7 +110,6 @@ export default function RehabilitationPage() {
 
       {/* Rehabilitation Workflow (Flowchart) */}
       <section className="py-24 text-white overflow-hidden relative">
-        <div className="absolute inset-0 bg-[#0a0a0a] z-[-2]" />
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-sm font-semibold tracking-widest text-white/50 uppercase mb-4">Process</h2>
           <h3 className="text-4xl font-bold tracking-tight mb-16">Rehabilitation Workflow</h3>
@@ -137,17 +134,16 @@ export default function RehabilitationPage() {
 
       {/* Benefits (Split View) */}
       <section className="py-24 md:py-32 relative">
-        <div className="absolute inset-0 bg-background z-[-2]" />
         <div className="max-w-7xl mx-auto px-6">
           <h3 className="text-4xl font-bold tracking-tight text-center mb-16">Ecosystem Benefits</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Patients */}
-            <div className="p-10 rounded-3xl bg-emerald-50/50 border border-emerald-100">
-              <h4 className="text-2xl font-bold mb-8 text-emerald-900">For Patients</h4>
+            <div className="p-10 rounded-3xl bg-emerald-950/20 border border-emerald-500/20">
+              <h4 className="text-2xl font-bold mb-8 text-emerald-400">For Patients</h4>
               <ul className="space-y-4">
                 {["Faster recovery", "Greater independence", "Motivating therapy", "Personalized treatment"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-lg text-emerald-800/80">
+                  <li key={i} className="flex items-center gap-3 text-lg text-emerald-100/80">
                     <div className="w-2 h-2 rounded-full bg-emerald-400" />
                     {item}
                   </li>
@@ -156,12 +152,12 @@ export default function RehabilitationPage() {
             </div>
 
             {/* Clinicians */}
-            <div className="p-10 rounded-3xl bg-[#fafafa] border border-black/5">
-              <h4 className="text-2xl font-bold mb-8">For Clinicians</h4>
+            <div className="p-10 rounded-3xl bg-white/5 border border-white/10">
+              <h4 className="text-2xl font-bold mb-8 text-foreground">For Clinicians</h4>
               <ul className="space-y-4">
                 {["Objective measurements", "Reduced workload", "Patient analytics", "Treatment optimization"].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-lg text-foreground/80">
-                    <div className="w-2 h-2 rounded-full bg-black" />
+                    <div className="w-2 h-2 rounded-full bg-foreground" />
                     {item}
                   </li>
                 ))}
@@ -172,14 +168,13 @@ export default function RehabilitationPage() {
       </section>
 
       {/* Research Areas & Vision */}
-      <section className="py-24 md:py-32 relative border-t border-black/5">
-        <div className="absolute inset-0 bg-background z-[-2]" />
+      <section className="py-24 md:py-32 relative border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
             <h2 className="text-sm font-semibold tracking-widest text-foreground/50 uppercase mb-6">Research Areas</h2>
             <div className="flex flex-wrap gap-3">
               {["Biomechanics", "Human Motor Control", "Medical Robotics", "Embedded Sensors", "Wearable AI", "Computer Vision"].map((area, i) => (
-                <span key={i} className="px-6 py-3 border border-black/10 rounded-full text-sm font-medium bg-black/[0.02]">
+                <span key={i} className="px-6 py-3 border border-white/10 rounded-full text-sm font-medium bg-white/5 text-foreground">
                   {area}
                 </span>
               ))}
