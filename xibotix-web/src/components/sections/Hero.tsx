@@ -33,7 +33,7 @@ export function Hero() {
 
   return (
     <section ref={containerRef} className="relative h-[300vh] bg-background">
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center volumetric-light">
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
         <ParticleOverlay />
 
         {/* The Robotic Hand */}
@@ -44,7 +44,7 @@ export function Hero() {
           <div className="relative w-[150vw] h-[150vh] md:w-[100vw] lg:w-[80vw]">
             <Image 
               src="/images/hero-hand.png"
-              alt="Xibotix Robotic Hand"
+              alt="HopeLift Robotic Hand"
               fill
               className="object-contain object-center drop-shadow-2xl"
               priority
@@ -53,24 +53,24 @@ export function Hero() {
             {/* Embedded OLED UI on the forearm */}
             <motion.div
               style={{ opacity: interfaceOpacity, scale: interfaceScale }}
-              className="absolute bottom-[20%] left-1/2 -translate-x-1/2 w-48 h-64 glass-panel cinematic-rim-light rounded-xl p-4 flex flex-col justify-between mix-blend-screen"
+              className="absolute bottom-[20%] left-1/2 -translate-x-1/2 w-48 h-64 glass-panel rounded-xl p-4 flex flex-col justify-between"
             >
               <div className="flex justify-between items-center text-[10px] text-emerald font-mono">
                 <span>SYS_ON</span>
                 <span>v3.0.4</span>
               </div>
               <div className="flex flex-col gap-2">
-                <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+                <div className="h-1 w-full bg-black/10 rounded-full overflow-hidden">
                   <div className="h-full w-[85%] bg-cyan rounded-full"></div>
                 </div>
-                <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+                <div className="h-1 w-full bg-black/10 rounded-full overflow-hidden">
                   <div className="h-full w-[60%] bg-emerald rounded-full"></div>
                 </div>
-                <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
-                  <div className="h-full w-[95%] bg-white rounded-full"></div>
+                <div className="h-1 w-full bg-black/10 rounded-full overflow-hidden">
+                  <div className="h-full w-[95%] bg-black rounded-full"></div>
                 </div>
               </div>
-              <div className="text-[10px] text-white/50 text-center font-mono">
+              <div className="text-[10px] text-foreground/50 text-center font-mono">
                 ACTUATORS ALIGNED
               </div>
             </motion.div>
@@ -82,35 +82,34 @@ export function Hero() {
           style={{ opacity: contentOpacity, y: contentY }}
           className="relative z-20 max-w-5xl mx-auto px-6 text-center mt-32 md:mt-0"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-xs font-medium text-foreground/80 mb-8 border border-white/10 shadow-lg">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel text-xs font-medium text-foreground/80 mb-8 border border-black/10 shadow-lg">
             <Activity size={14} className="text-emerald" />
             <span className="tracking-widest uppercase text-[10px]">System Online</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-[7rem] font-medium tracking-tighter leading-[0.9] mb-8 text-foreground mix-blend-plus-lighter">
+          <h1 className="text-5xl md:text-7xl lg:text-[7rem] font-medium tracking-tighter leading-[0.9] mb-8 text-foreground">
             Engineering <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground via-foreground/80 to-foreground/40">Human Potential</span>
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/60 max-w-2xl mx-auto mb-12 text-balance leading-relaxed font-light">
-            XIBOTIX develops intelligent humanoid robotics and advanced rehabilitation systems designed to restore, assist and elevate human capability.
+            HOPELIFT develops intelligent humanoid robotics and advanced rehabilitation systems designed to restore, assist and elevate human capability.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a href="#robotics" className="w-full sm:w-auto px-10 py-5 bg-foreground text-background font-medium rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-[0_0_40px_-10px_rgba(255,255,255,0.4)]">
+            <a href="#robotics" className="w-full sm:w-auto px-10 py-5 bg-foreground text-background font-medium rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-[0_0_40px_-10px_rgba(0,0,0,0.2)]">
               Explore Robotics
               <ArrowRight size={18} />
             </a>
-            <a href="#rehab" className="w-full sm:w-auto px-10 py-5 glass-panel text-foreground font-medium rounded-full flex items-center justify-center gap-2 hover:bg-white/10 transition-all border border-white/20">
+            <a href="#rehab" className="w-full sm:w-auto px-10 py-5 glass-panel text-foreground font-medium rounded-full flex items-center justify-center gap-2 hover:bg-black/5 transition-all border border-black/10">
               Explore Rehabilitation
             </a>
           </div>
         </motion.div>
 
-        {/* Scroll Indicator */}
         <motion.div 
           style={{ opacity: contentOpacity }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-foreground/30"
         >
           <span className="text-[10px] uppercase tracking-[0.3em]">Initialize</span>
           <motion.div

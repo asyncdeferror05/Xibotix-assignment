@@ -15,7 +15,7 @@ export function CompanyOverview() {
           >
             <h2 className="text-3xl md:text-5xl font-medium tracking-tight mb-6">Redefining Physical Limits.</h2>
             <p className="text-muted text-lg leading-relaxed mb-8 text-balance">
-              At XIBOTIX, our mission is to seamlessly integrate advanced robotics and state-of-the-art rehabilitation technologies. We envision a future where physical limitations are obsolete, empowered by intelligent machines that augment human capabilities and restore mobility.
+              At HopeLift, our mission is to seamlessly integrate advanced robotics and state-of-the-art rehabilitation technologies. We envision a future where physical limitations are obsolete, empowered by intelligent machines that augment human capabilities and restore mobility.
             </p>
           </motion.div>
           
@@ -24,7 +24,7 @@ export function CompanyOverview() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col justify-center gap-8 border-l border-white/10 pl-8 md:pl-16"
+            className="flex flex-col justify-center gap-8 border-l border-black/10 pl-8 md:pl-16"
           >
             <div>
               <h3 className="text-accent font-medium mb-2 tracking-wide uppercase text-sm">Vision</h3>

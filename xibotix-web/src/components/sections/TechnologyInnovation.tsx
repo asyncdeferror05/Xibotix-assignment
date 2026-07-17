@@ -13,13 +13,13 @@ export function TechnologyInnovation() {
   ];
 
   return (
-    <section id="technology" className="py-32 bg-background border-t border-white/5 relative">
+    <section id="technology" className="py-32 bg-background border-t border-black/5 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-3xl md:text-5xl font-medium tracking-tight mb-6">Unified Technology Stack.</h2>
           <p className="text-muted text-lg">
-            Our dual domains are powered by a single, scalable architecture. Discover the foundational technologies and the innovation process that drives XIBOTIX.
+            Our dual domains are powered by a single, scalable architecture. Discover the foundational technologies and the innovation process that drives HopeLift.
           </p>
         </div>
 
@@ -31,14 +31,14 @@ export function TechnologyInnovation() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="px-6 py-3 bg-surface border border-white/10 rounded-full text-sm font-medium hover:bg-white/5 transition-colors cursor-default"
+              className="px-6 py-3 bg-surface border border-black/10 rounded-full text-sm font-medium hover:bg-black/5 transition-colors cursor-default"
             >
               {tech}
             </motion.div>
           ))}
         </div>
 
-        <div className="max-w-4xl mx-auto relative border-l border-white/10 ml-4 md:ml-1/2">
+        <div className="max-w-4xl mx-auto relative border-l border-black/10 ml-4 md:ml-1/2">
           {timeline.map((step, idx) => (
             <motion.div 
               key={idx}

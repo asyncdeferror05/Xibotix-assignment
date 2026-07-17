@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "XIBOTIX | Advanced Humanoid Robotics & Rehabilitation",
-  description: "XIBOTIX is at the intersection of deep-tech humanoid robotics and next-generation rehabilitation devices.",
+  title: "HopeLift | Advanced Humanoid Robotics & Rehabilitation",
+  description: "HopeLift is at the intersection of deep-tech humanoid robotics and next-generation rehabilitation devices.",
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
         {children}
       </body>

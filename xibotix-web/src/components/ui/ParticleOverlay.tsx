@@ -52,7 +52,7 @@ export function ParticleOverlay() {
       particles.forEach((particle) => {
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`;
+        ctx.fillStyle = `rgba(0, 0, 0, ${particle.opacity})`;
         ctx.fill();
 
         // Move particle
@@ -81,7 +81,7 @@ export function ParticleOverlay() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 pointer-events-none z-10 opacity-60 mix-blend-screen"
+      className="absolute inset-0 pointer-events-none z-10 opacity-60 mix-blend-multiply"
     />
   );
 }

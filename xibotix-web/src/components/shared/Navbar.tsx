@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,8 +24,8 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-foreground rounded-sm flex items-center justify-center text-background font-bold text-xl tracking-tighter">X</div>
-          <span className="text-xl font-medium tracking-[0.2em] uppercase text-foreground/90">Xibotix</span>
+          <Image src="/images/hopelift-logo.png" alt="HopeLift Logo" width={32} height={32} className="object-contain" />
+          <span className="text-xl font-medium tracking-[0.2em] uppercase text-foreground/90">HopeLift</span>
         </div>
         
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-foreground/70">
@@ -36,7 +37,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <a href="#contact" className="px-6 py-2.5 bg-transparent hover:bg-white/5 border border-white/20 rounded-full text-sm font-medium transition-all text-foreground/90 hover:text-foreground">
+          <a href="#contact" className="px-6 py-2.5 bg-transparent hover:bg-black/5 border border-black/10 rounded-full text-sm font-medium transition-all text-foreground/90 hover:text-foreground">
             Contact
           </a>
         </div>
@@ -51,13 +52,13 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-white/5 p-6 flex flex-col gap-6 h-screen">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-black/5 p-6 flex flex-col gap-6 h-screen">
           <a href="#robotics" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-medium text-foreground/80 hover:text-foreground">Robotics</a>
           <a href="#rehab" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-medium text-foreground/80 hover:text-foreground">Rehabilitation</a>
           <a href="#technology" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-medium text-foreground/80 hover:text-foreground">Technology</a>
           <a href="#research" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-medium text-foreground/80 hover:text-foreground">Research</a>
           <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-medium text-foreground/80 hover:text-foreground">About</a>
-          <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-medium text-foreground/80 hover:text-foreground mt-4 pt-4 border-t border-white/10">Contact</a>
+          <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-medium text-foreground/80 hover:text-foreground mt-4 pt-4 border-t border-black/10">Contact</a>
         </div>
       )}
     </header>
