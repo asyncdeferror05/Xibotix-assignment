@@ -1,0 +1,24 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+export const metadata: Metadata = {
+  title: "XIBOTIX | Advanced Humanoid Robotics & Rehabilitation",
+  description: "XIBOTIX is at the intersection of deep-tech humanoid robotics and next-generation rehabilitation devices.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
+        {children}
+      </body>
+    </html>
+  );
+}
