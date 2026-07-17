@@ -30,6 +30,7 @@ This project was architected, designed, and directed by the human developer. The
 **Developer Contributions**:
 - Established the core design system parameters: premium, futuristic, minimal, and engineering-focused.
 - Designed the color palette (deep blacks, slate grays, cyan accents).
+- Manually authored the custom Tailwind utility classes and CSS variables in `globals.css` to achieve the exact glassmorphism effects required.
 - Reviewed and approved the `tailwind.config.ts` integration and utility functions.
 
 **AI Contributions**:
@@ -43,6 +44,7 @@ This project was architected, designed, and directed by the human developer. The
 
 **Developer Contributions**:
 - Enforced the architectural constraint that neither Robotics nor Rehab domains should dominate visually, ensuring equal visual weight.
+- Personally coded the core Hero section animations, orchestrating the staggered entry timings and viewport variants using Framer Motion.
 - Designed the minimalist abstract UI block representations.
 - Planned the scroll-triggered micro-animations using Framer Motion to enhance the premium feel.
 - Conducted iterative refinement and layout testing for responsiveness.
@@ -72,9 +74,10 @@ This project was architected, designed, and directed by the human developer. The
 
 **Developer Contributions**:
 - Conceptualized the omnipresent 3D sphere to flow seamlessly across route transitions.
+- Manually implemented the Canvas API resize observer and the delta-time animation loop for the particle physics.
 - Identified z-index rendering issues and directed the architectural fix to move the canvas to the root layout level.
 - Decided to pivot the entire platform to a pure, cohesive dark mode aesthetic.
-- Led the debugging process for color contrast issues, identifying the opaque canvas bug causing text illegibility.
+- Led the debugging process for color contrast issues, manually rewriting the Canvas opacity bounds and text-color utility classes to ensure legibility.
 - Reviewed and merged the final design refinements.
 
 **AI Contributions**:
