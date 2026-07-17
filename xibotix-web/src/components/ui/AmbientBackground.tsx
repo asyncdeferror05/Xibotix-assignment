@@ -74,7 +74,7 @@ class Particle {
 
     // Calculate opacity based on Z depth (fade out objects further away/on back of sphere)
     // zFinal goes from roughly -radius to +radius. Front is -z in this coord system.
-    let opacity = Math.max(0, Math.min(0.8, (this.radius - zFinal) / (this.radius * 2)));
+    const opacity = Math.max(0, Math.min(0.8, (this.radius - zFinal) / (this.radius * 2)));
     
     // Only draw if visible
     if (opacity > 0.05) {

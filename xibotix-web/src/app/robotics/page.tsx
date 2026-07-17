@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Brain, Eye, Cpu, Crosshair, Network, Activity, Zap, Server } from "lucide-react";
-import { AmbientBackground } from "@/components/ui/AmbientBackground";
+import { ArrowRight, Brain, Eye, Cpu, Crosshair, Network, Activity } from "lucide-react";
 
 export default function RoboticsPage() {
   return (
