@@ -2,6 +2,7 @@
 
 import { ParticleOverlay } from "@/components/ui/ParticleOverlay";
 import { ArrowRight, Activity } from "lucide-react";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -25,14 +26,14 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-          <a href="#robotics" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-foreground text-background font-medium rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-md text-sm md:text-base">
+          <Link href="/robotics" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-foreground text-background font-medium rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-md text-sm md:text-base">
             Explore Robotics
             <ArrowRight size={18} />
-          </a>
-          <a href="#rehab" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-foreground text-background font-medium rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-md text-sm md:text-base">
+          </Link>
+          <Link href="/rehabilitation" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-foreground text-background font-medium rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-md text-sm md:text-base">
             Explore Rehabilitation
             <ArrowRight size={18} />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
