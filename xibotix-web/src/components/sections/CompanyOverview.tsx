@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function CompanyOverview() {
   return (
-    <section id="innovation" className="py-32 bg-background relative overflow-hidden">
+    <section id="innovation" className="py-16 md:py-32 bg-transparent relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8">
           <motion.div 

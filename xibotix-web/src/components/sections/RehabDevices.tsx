@@ -14,7 +14,7 @@ export function RehabDevices() {
   ];
 
   return (
-    <section id="rehab" className="py-32 bg-background border-t border-black/5 relative">
+    <section id="rehab" className="py-16 md:py-32 bg-transparent border-t border-black/5 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
           
